@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <hotel id="1">
+    <name>Hotel Sunshine</name>
+    <location>Phoenix</location>
+    <rating>4.5</rating>
+    <pricePerNight>129.99</pricePerNight>
+    <available>true</available>
+  </hotel>
+
+  <hotel id="2">
+    <name>Desert Inn</name>
+    <location>Tempe</location>
+    <rating>3.8</rating>
+    <pricePerNight>89.50</pricePerNight>
+    <available>false</available>
+  </hotel>
+
+  <hotel id="3">
+    <name>Skyline Suites</name>
+    <location>Scottsdale</location>
+    <rating>4.9</rating>
+    <pricePerNight>179.00</pricePerNight>
+    <available>true</available>
+  </hotel>
+
+</hotels>

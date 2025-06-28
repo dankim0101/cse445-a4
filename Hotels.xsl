@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<!-- 1) 루트가 잘못됨: Hotels → Hotel -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <xsl:template match="/hotels">
-    <html>
-      <body>
-        <h2>Hotel Listings</h2>
-        <table border="1">
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Location</th>
-            <th>Rating</th>
-            <th>Price/Night</th>
-            <th>Available</th>
-          </tr>
-          <xsl:for-each select="hotel">
-            <tr>
-              <td><xsl:value-of select="@id"/></td>
-              <td><xsl:value-of select="name"/></td>
-              <td><xsl:value-of select="location"/></td>
-              <td><xsl:value-of select="rating"/></td>
-              <td><xsl:value-of select="pricePerNight"/></td>
-              <td><xsl:value-of select="available"/></td>
-            </tr>
-          </xsl:for-each>
-        </table>
-      </body>
-    </html>
-  </xsl:template>
+  <!-- 2) 필수 속성 id 빠짐 -->
+  <Hotel>
+    <Name>Westin</Name>
+    <!-- 4) Address 닫는 태그 누락 -->
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    <!-- </Address> 빠짐 -->
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Rating>4.2</Rating>
+  </Hotel>
 
-</xsl:stylesheet>
+  <Hotel id="2">
+    <!-- 3) Phone 요소 누락 -->
+    <Name>Desert Inn</Name>
+    <Address>
+      <Number>22</Number>
+      <Street>S 3rd Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Rating>3.8</Rating>
+  </Hotel>
+
+  <Hotel id="3">
+    <!-- 5) Name이 두 번 있음 -->
+    <Name>Skyline Suites</Name>
+    <Name>Duplicate Name</Name>
+    <Address NearestAirport="Falcon Field">
+      <Number>300</Number>
+      <Street>Market St</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+    <Phone>480-555-9876</Phone>
+  </Hotel>
+
+</Hotel>

@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <hotel id="1">
-    <name>Hotel Sunshine</name>
-    <location>Phoenix</location>
-    <rating>4.5</rating>
-    <pricePerNight>129.99</pricePerNight>
-    <available>true</available>
-  </hotel>
+  <Hotel id="1">
+    <Name>Westin</Name>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Rating>4.2</Rating>
+  </Hotel>
 
-  <hotel id="2">
-    <name>Desert Inn</name>
-    <location>Tempe</location>
-    <rating>3.8</rating>
-    <pricePerNight>89.50</pricePerNight>
-    <available>false</available>
-  </hotel>
+  <Hotel id="2">
+    <Name>Desert Inn</Name>
+    <Address>
+      <Number>22</Number>
+      <Street>S 3rd Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-555-1234</Phone>
+    <Rating>3.8</Rating>
+  </Hotel>
 
-  <hotel id="3">
-    <name>Skyline Suites</name>
-    <location>Scottsdale</location>
-    <rating>4.9</rating>
-    <pricePerNight>179.00</pricePerNight>
-    <available>true</available>
-  </hotel>
+  <Hotel id="3">
+    <Name>Skyline Suites</Name>
+    <Address NearestAirport="Falcon Field">
+      <Number>300</Number>
+      <Street>Market St</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+    <Phone>480-555-9876</Phone>
+    <!-- Rating 생략 가능 -->
+  </Hotel>
 
-</hotels>
+</Hotels>

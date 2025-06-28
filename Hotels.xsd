@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="hotels">
+
+  <!-- 루트 요소 -->
+  <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="hotel" maxOccurs="unbounded">
+        <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="name" type="xs:string"/>
-              <xs:element name="location" type="xs:string"/>
-              <xs:element name="rating" type="xs:float"/>
-              <xs:element name="pricePerNight" type="xs:decimal"/>
-              <xs:element name="available" type="xs:boolean"/>
+              <!-- 호텔 이름 -->
+              <xs:element name="Name" type="xs:string"/>
+              <!-- 주소 복합 타입 -->
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Number" type="xs:string"/>
+                    <xs:element name="Street" type="xs:string"/>
+                    <xs:element name="City" type="xs:string"/>
+                    <xs:element name="State" type="xs:string"/>
+                    <xs:element name="Zip" type="xs:string"/>
+                  </xs:sequence>
+                  <!-- 선택 속성: 공항 정보 -->
+                  <xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <!-- 전화번호: 복수 허용 -->
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+              <!-- 평점: 선택 -->
+              <xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
             </xs:sequence>
-            <xs:attribute name="id" type="xs:int" use="required"/>
+            <!-- 필수 속성: 호텔 고유 id -->
+            <xs:attribute name="id" type="xs:integer" use="required"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
 </xs:schema>
+
 
 

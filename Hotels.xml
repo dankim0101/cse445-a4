@@ -25,7 +25,6 @@
       <State>AZ</State>
       <Zip>85034</Zip>
     </Address>
-    <Rating>4.0</Rating>
   </Hotel>
   <Hotel chain="HiltonChain">
     <Name>Hilton</Name>
@@ -37,7 +36,7 @@
       <State>AZ</State>
       <Zip>85226</Zip>
     </Address>
-    <Rating>4.1</Rating>
+    <Rating>4.0</Rating>
   </Hotel>
   <Hotel chain="SheratonChain">
     <Name>Sheraton Grand</Name>
@@ -49,7 +48,7 @@
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
-    <Rating>4.3</Rating>
+    <Rating>4.1</Rating>
   </Hotel>
   <Hotel chain="HyattChain">
     <Name>Hyatt Regency</Name>
@@ -61,7 +60,7 @@
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
-    <Rating>4.4</Rating>
+    <Rating>4.3</Rating>
   </Hotel>
   <Hotel chain="FourSeasonsChain">
     <Name>Four Seasons</Name>
@@ -73,7 +72,7 @@
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
-    <Rating>4.8</Rating>
+    <Rating>4.7</Rating>
   </Hotel>
   <Hotel chain="RitzCarltonChain">
     <Name>Ritz-Carlton</Name>

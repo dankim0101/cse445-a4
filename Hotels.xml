@@ -2,11 +2,13 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <!-- 예시 1: Westin -->
+  <!-- 예시 1 -->
   <Hotel chain="WestinChain">
     <Name>Westin</Name>
+
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
+
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -14,13 +16,16 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+
     <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 예시 2: Marriott -->
+  <!-- 예시 2 -->
   <Hotel>
     <Name>Marriott</Name>
+
     <Phone>602-943-6600</Phone>
+
     <Address NearestAirport="Sky Harbor">
       <Number>2000</Number>
       <Street>Plaza Level</Street>
@@ -28,9 +33,12 @@
       <State>AZ</State>
       <Zip>85034</Zip>
     </Address>
-    <!-- Rating이 없는 경우도 허용 -->
+
+    <!-- Rating이 없는 경우 허용 -->
   </Hotel>
 
-  <!-- 실제 호텔 정보 8개를 동일한 순서로 추가하세요 -->
+  <!-- TODO: 실제 호텔 정보 8개를 위 예시와 동일한 순서/형식으로 추가 -->
+  
 </Hotels>
+
 

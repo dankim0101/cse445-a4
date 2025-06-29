@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <!-- 예시 10개만 보여줍니다. 반드시 10개 이상 채워 주세요 -->
   <Hotel chain="WestinChain">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -14,6 +16,8 @@
     </Address>
     <Rating>4.2</Rating>
   </Hotel>
+
+  <Hotel>
     <Name>Marriott</Name>
     <Phone>602-943-6600</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -24,6 +28,7 @@
       <Zip>85034</Zip>
     </Address>
   </Hotel>
+
   <Hotel chain="HiltonChain">
     <Name>Hilton</Name>
     <Phone>480-706-8800</Phone>
@@ -36,6 +41,7 @@
     </Address>
     <Rating>4.0</Rating>
   </Hotel>
+
   <Hotel chain="SheratonChain">
     <Name>Sheraton Grand</Name>
     <Phone>602-262-2500</Phone>
@@ -48,6 +54,7 @@
     </Address>
     <Rating>4.1</Rating>
   </Hotel>
+
   <Hotel chain="HyattChain">
     <Name>Hyatt Regency</Name>
     <Phone>602-252-1234</Phone>
@@ -60,6 +67,7 @@
     </Address>
     <Rating>4.3</Rating>
   </Hotel>
+
   <Hotel chain="FourSeasonsChain">
     <Name>Four Seasons</Name>
     <Phone>602-795-9444</Phone>
@@ -72,6 +80,7 @@
     </Address>
     <Rating>4.7</Rating>
   </Hotel>
+
   <Hotel chain="RitzCarltonChain">
     <Name>Ritz-Carlton</Name>
     <Phone>602-468-0700</Phone>
@@ -84,6 +93,7 @@
     </Address>
     <Rating>4.6</Rating>
   </Hotel>
+
   <Hotel chain="HolidayInnChain">
     <Name>Holiday Inn</Name>
     <Phone>602-253-2041</Phone>
@@ -96,6 +106,7 @@
     </Address>
     <Rating>3.9</Rating>
   </Hotel>
+
   <Hotel chain="EmbassySuitesChain">
     <Name>Embassy Suites</Name>
     <Phone>602-683-6000</Phone>
@@ -108,6 +119,7 @@
     </Address>
     <Rating>4.2</Rating>
   </Hotel>
+
   <Hotel chain="ResidenceInnChain">
     <Name>Residence Inn</Name>
     <Phone>602-254-1700</Phone>
@@ -120,4 +132,5 @@
     </Address>
     <Rating>4.1</Rating>
   </Hotel>
+
 </Hotels>

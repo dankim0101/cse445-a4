@@ -27,3 +27,4 @@
     <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:schema>
+

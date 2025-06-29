@@ -2,6 +2,7 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
+  <!-- 예시 1: Westin -->
   <Hotel chain="WestinChain">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -16,6 +17,7 @@
     <Rating>4.2</Rating>
   </Hotel>
 
+  <!-- 예시 2: Marriott -->
   <Hotel>
     <Name>Marriott</Name>
     <Phone>602-943-6600</Phone>
@@ -29,5 +31,6 @@
     <!-- Rating이 없는 경우도 허용 -->
   </Hotel>
 
-  <!-- TODO: 실제 호텔 정보 8개를 이와 동일한 형식으로 추가 기입 -->
+  <!-- TODO: 나머지 8개 호텔도 같은 순서로 추가 기입 -->
 </Hotels>
+

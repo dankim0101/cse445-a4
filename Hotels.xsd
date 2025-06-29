@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- (루트 요소) -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
+        <!-- Hotel 요소가 무한 반복 -->
         <xs:element name="Hotel" type="HotelType" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
 
+  <!-- HotelType 정의 -->
   <xs:complexType name="HotelType">
     <xs:sequence>
-      <xs:element name="Name"    type="xs:string"/>
-      <xs:element name="Phone"   type="xs:string" maxOccurs="unbounded"/>
+      <!-- 순서: Name → Address → Phone* → Rating? -->
+      <xs:element name="Name" type="xs:string"/>
       <xs:element name="Address" type="AddressType"/>
-      <xs:element name="Rating"  type="xs:decimal" minOccurs="0"/>
+      <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+      <xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
     </xs:sequence>
+    <!-- 선택 속성 chain -->
     <xs:attribute name="chain" type="xs:string" use="optional"/>
   </xs:complexType>
 
+  <!-- AddressType 정의 -->
   <xs:complexType name="AddressType">
     <xs:sequence>
+      <!-- 순서: Number → Street → City → State → Zip -->
       <xs:element name="Number" type="xs:string"/>
       <xs:element name="Street" type="xs:string"/>
-      <xs:element name="City"   type="xs:string"/>
-      <xs:element name="State"  type="xs:string"/>
-      <xs:element name="Zip"    type="xs:string"/>
+      <xs:element name="City" type="xs:string"/>
+      <xs:element name="State" type="xs:string"/>
+      <xs:element name="Zip" type="xs:string"/>
     </xs:sequence>
+    <!-- 필수 속성 NearestAirport -->
     <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:schema>
-

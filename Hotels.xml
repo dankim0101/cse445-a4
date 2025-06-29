@@ -1,12 +1,11 @@
-<!-- Hotels.xml (정상 인스턴스, 10개 호텔 예시) -->
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <Hotel id="1">
+  <!-- 예시 1 -->
+  <Hotel chain="WestinChain">
     <Name>Westin</Name>
-    <Address optionalAttribute="yes">
-      <NearestAirport>Sky Harbor</NearestAirport>
+    <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -18,130 +17,19 @@
     <Rating>4.2</Rating>
   </Hotel>
 
-  <Hotel id="2">
+  <!-- 예시 2 -->
+  <Hotel>
     <Name>Marriott</Name>
-    <Address>
-      <NearestAirport>Sky Harbor</NearestAirport>
-      <Number>200</Number>
-      <Street>East Washington St</Street>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2000</Number>
+      <Street>Plaza Level</Street>
       <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85004</Zip>
+      <Zip>85034</Zip>
     </Address>
-    <Phone>602-952-1200</Phone>
-    <Rating>4.0</Rating>
+    <Phone>602-943-6600</Phone>
+    <!-- Rating이 없는 경우도 허용 -->
   </Hotel>
 
-  <Hotel id="3">
-    <Name>Hilton</Name>
-    <Address>
-      <NearestAirport>McCarran</NearestAirport>
-      <Number>300</Number>
-      <Street>East Tropicana Ave</Street>
-      <City>Las Vegas</City>
-      <State>NV</State>
-      <Zip>89169</Zip>
-    </Address>
-    <Phone>702-732-5111</Phone>
-    <Rating>4.5</Rating>
-  </Hotel>
-
-  <Hotel id="4">
-    <Name>Hyatt</Name>
-    <Address optionalAttribute="near plaza">
-      <NearestAirport>O'Hare</NearestAirport>
-      <Number>888</Number>
-      <Street>Harlem Ave</Street>
-      <City>Chicago</City>
-      <State>IL</State>
-      <Zip>60634</Zip>
-    </Address>
-    <Phone>773-686-1234</Phone>
-    <Rating>4.3</Rating>
-  </Hotel>
-
-  <Hotel id="5">
-    <Name>Sheraton</Name>
-    <Address>
-      <NearestAirport>LAX</NearestAirport>
-      <Number>111</Number>
-      <Street>West Century Blvd</Street>
-      <City>Los Angeles</City>
-      <State>CA</State>
-      <Zip>90045</Zip>
-    </Address>
-    <Phone>310-641-5700</Phone>
-    <Rating>4.1</Rating>
-  </Hotel>
-
-  <Hotel id="6">
-    <Name>Four Seasons</Name>
-    <Address>
-      <NearestAirport>JFK</NearestAirport>
-      <Number>57</Number>
-      <Street>East 57th St</Street>
-      <City>New York</City>
-      <State>NY</State>
-      <Zip>10022</Zip>
-    </Address>
-    <Phone>212-758-5700</Phone>
-    <Rating>4.8</Rating>
-  </Hotel>
-
-  <Hotel id="7">
-    <Name>Ritz-Carlton</Name>
-    <Address>
-      <NearestAirport>ATL</NearestAirport>
-      <Number>181</Number>
-      <Street>Peachtree St NE</Street>
-      <City>Atlanta</City>
-      <State>GA</State>
-      <Zip>30303</Zip>
-    </Address>
-    <Phone>404-659-0400</Phone>
-    <Rating>4.7</Rating>
-  </Hotel>
-
-  <Hotel id="8">
-    <Name>Fairmont</Name>
-    <Address>
-      <NearestAirport>YVR</NearestAirport>
-      <Number>900</Number>
-      <Street>Georgia St</Street>
-      <City>Vancouver</City>
-      <State>BC</State>
-      <Zip>V6Z1K3</Zip>
-    </Address>
-    <Phone>604-662-1900</Phone>
-    <Rating>4.6</Rating>
-  </Hotel>
-
-  <Hotel id="9">
-    <Name>Holiday Inn</Name>
-    <Address>
-      <NearestAirport>ORD</NearestAirport>
-      <Number>9800</Number>
-      <Street>West Higgins Rd</Street>
-      <City>Chicago</City>
-      <State>IL</State>
-      <Zip>60631</Zip>
-    </Address>
-    <Phone>773-792-4141</Phone>
-    <Rating>3.9</Rating>
-  </Hotel>
-
-  <Hotel id="10">
-    <Name>Wyndham</Name>
-    <Address>
-      <NearestAirport>DFW</NearestAirport>
-      <Number>1000</Number>
-      <Street>North Stemmons Fwy</Street>
-      <City>Dallas</City>
-      <State>TX</State>
-      <Zip>75207</Zip>
-    </Address>
-    <Phone>214-333-5000</Phone>
-    <Rating>4.0</Rating>
-  </Hotel>
-
+  <!-- TODO: 실제 호텔 정보 8개를 이와 동일한 형식으로 추가 기입 -->
 </Hotels>

@@ -2,7 +2,6 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <!-- 예시 1 -->
   <Hotel chain="WestinChain">
     <Name>Westin</Name>
     <Address NearestAirport="Sky Harbor">
@@ -17,7 +16,6 @@
     <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 예시 2 -->
   <Hotel>
     <Name>Marriott</Name>
     <Address NearestAirport="Sky Harbor">
@@ -28,10 +26,9 @@
       <Zip>85034</Zip>
     </Address>
     <Phone>602-943-6600</Phone>
-    <!-- Rating 생략 가능 -->
+    <!-- Rating 생략 -->
   </Hotel>
 
-  <!-- 실제 호텔 8개(이하 최소 10개) -->
   <Hotel chain="HiltonChain">
     <Name>Hilton</Name>
     <Address NearestAirport="Sky Harbor">

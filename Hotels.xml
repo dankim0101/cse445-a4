@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
-
   <Hotel chain="WestinChain">
     <Name>Westin</Name>
     <Address NearestAirport="Sky Harbor">
@@ -15,7 +14,6 @@
     <Phone>800-937-8461</Phone>
     <Rating>4.2</Rating>
   </Hotel>
-
   <Hotel>
     <Name>Marriott</Name>
     <Address NearestAirport="Sky Harbor">
@@ -26,7 +24,6 @@
       <Zip>85034</Zip>
     </Address>
     <Phone>602-943-6600</Phone>
-    <!-- Rating 생략 -->
   </Hotel>
 
   <Hotel chain="HiltonChain">

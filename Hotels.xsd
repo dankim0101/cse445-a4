@@ -8,6 +8,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name"    type="xs:string"/>
@@ -17,6 +18,7 @@
     </xs:sequence>
     <xs:attribute name="chain" type="xs:string" use="optional"/>
   </xs:complexType>
+
   <xs:complexType name="AddressType">
     <xs:sequence>
       <xs:element name="Number" type="xs:string"/>

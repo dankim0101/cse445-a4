@@ -1,4 +1,3 @@
-<!-- HotelsErrors.xml -->
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
@@ -14,4 +13,5 @@
     <!-- Phone 누락 -->
     <Rating>4.2</Rating>
   </Hotel>
+  <!-- 나머지도 비슷하게 Phone 누락 등 오류 주입 -->
 </Hotels>

@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- (1) 잘못된 루트 이름: Hotel 대신 Hotels -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
-
-  <!-- (2) id 속성 누락 -->
+  <!-- (1) 잘못된 루트 요소: <Hotels> 여야 하지만 <Hotel> 로 지정됨 -->
   <Hotel>
+    <!-- (5) Name 요소 중복 -->
     <Name>Westin</Name>
-    <!-- (4) Address 닫는 태그 삭제 -->
+    <Name>Westin Duplicate</Name>
+
+    <!-- (2) Address에 NearestAirport 속성 누락 -->
     <Address>
-      <NearestAirport>Sky Harbor</NearestAirport>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-    <!-- </Address> 빠져 있음 -->
+    <!-- (4) Address 닫는 태그(</Address>) 누락 -->
 
-    <!-- (3) Phone 요소 누락 -->
-    <!-- <Phone>480-968-8885</Phone> 빠져 있음 -->
+    <!-- (3) Phone 요소 하나가 빠짐 -->
+    <!-- <Phone>480-968-8885</Phone> -->
 
-    <!-- (5) Name 요소 중복 -->
-    <Name>Westin Duplicate</Name>
     <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 두 번째 엔트리 (정상 구조) -->
-  <Hotel id="2">
-    <Name>Marriott</Name>
-    <Address>
-      <NearestAirport>Sky Harbor</NearestAirport>
-      <Number>200</Number>
-      <Street>East Washington St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85004</Zip>
-    </Address>
-    <Phone>602-952-1200</Phone>
-    <Rating>4.0</Rating>
-  </Hotel>
-
+  <!-- 추가 Hotel 요소에도 동일한 유형의 오류를 삽입 가능 -->
 </Hotel>

@@ -1,7 +1,8 @@
+<!-- Hotels.xsd -->
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <!-- 루트 Hotels: 여러 Hotel -->
+  <!-- 루트 Hotels -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
@@ -10,12 +11,12 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- HotelType: Name → Address → Phone* → Rating? -->
+  <!-- HotelType: Name → Phone* → Address → Rating? -->
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name"    type="xs:string"/>
-      <xs:element name="Address" type="AddressType"/>
       <xs:element name="Phone"   type="xs:string" maxOccurs="unbounded"/>
+      <xs:element name="Address" type="AddressType"/>
       <xs:element name="Rating"  type="xs:decimal" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute name="chain" type="xs:string" use="optional"/>
@@ -34,4 +35,5 @@
   </xs:complexType>
 
 </xs:schema>
+
 

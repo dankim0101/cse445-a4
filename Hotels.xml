@@ -26,8 +26,110 @@
       <Zip>85034</Zip>
     </Address>
     <Phone>602-943-6600</Phone>
-    <!-- Rating 생략 -->
   </Hotel>
-  
-  <!-- 이하 모든 Hotel에 대해 같은 순서 -->
+
+  <Hotel chain="HiltonChain">
+    <Name>Hilton</Name>
+    <Address NearestAirport="Sky Harbor">
+      <Number>5400</Number>
+      <Street>W Chandler Blvd</Street>
+      <City>Chandler</City>
+      <State>AZ</State>
+      <Zip>85226</Zip>
+    </Address>
+    <Phone>480-706-8800</Phone>
+    <Rating>4.0</Rating>
+  </Hotel>
+
+  <Hotel chain="SheratonChain">
+    <Name>Sheraton Grand</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>340</Number>
+      <Street>N 3rd Street</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-262-2500</Phone>
+    <Rating>4.1</Rating>
+  </Hotel>
+
+  <Hotel chain="HyattChain">
+    <Name>Hyatt Regency</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-252-1234</Phone>
+    <Rating>4.3</Rating>
+  </Hotel>
+
+  <Hotel chain="FourSeasonsChain">
+    <Name>Four Seasons</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>106</Number>
+      <Street>E Adams St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-795-9444</Phone>
+    <Rating>4.7</Rating>
+  </Hotel>
+
+  <Hotel chain="RitzCarltonChain">
+    <Name>Ritz-Carlton</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>100</Number>
+      <Street>E Camelback Rd</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85016</Zip>
+    </Address>
+    <Phone>602-468-0700</Phone>
+    <Rating>4.6</Rating>
+  </Hotel>
+
+  <Hotel chain="HolidayInnChain">
+    <Name>Holiday Inn</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>800</Number>
+      <Street>E Van Buren St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85006</Zip>
+    </Address>
+    <Phone>602-253-2041</Phone>
+    <Rating>3.9</Rating>
+  </Hotel>
+
+  <Hotel chain="EmbassySuitesChain">
+    <Name>Embassy Suites</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>100</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-683-6000</Phone>
+    <Rating>4.2</Rating>
+  </Hotel>
+
+  <Hotel chain="ResidenceInnChain">
+    <Name>Residence Inn</Name>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>610</Number>
+      <Street>N 1st St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+    <Phone>602-254-1700</Phone>
+    <Rating>4.1</Rating>
+  </Hotel>
+
 </Hotels>

@@ -1,4 +1,3 @@
-<!-- Hotels.xsd -->
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
@@ -11,7 +10,7 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- HotelType: 반드시 Name → Phone* → Address → Rating? 순서 -->
+  <!-- HotelType: Name → Phone* → Address → Rating? 순서 -->
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name"    type="xs:string"/>
@@ -35,3 +34,4 @@
   </xs:complexType>
 
 </xs:schema>
+

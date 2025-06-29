@@ -1,6 +1,8 @@
 <!-- Hotels.xsd -->
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 루트 Hotels: 여러 Hotel 요소 -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
@@ -8,6 +10,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- HotelType: Name → Phone* → Address → Rating? -->
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name"    type="xs:string"/>
@@ -17,6 +21,8 @@
     </xs:sequence>
     <xs:attribute name="chain" type="xs:string" use="optional"/>
   </xs:complexType>
+
+  <!-- AddressType: Number → Street → City → State → Zip -->
   <xs:complexType name="AddressType">
     <xs:sequence>
       <xs:element name="Number" type="xs:string"/>
@@ -27,4 +33,5 @@
     </xs:sequence>
     <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
+
 </xs:schema>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-  <!-- 루트 요소 -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
@@ -10,7 +8,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- HotelType 정의 -->
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name"    type="xs:string"/>
@@ -18,11 +15,9 @@
       <xs:element name="Address" type="AddressType"/>
       <xs:element name="Rating"  type="xs:decimal" minOccurs="0"/>
     </xs:sequence>
-    <!-- Optional attribute -->
     <xs:attribute name="chain" type="xs:string" use="optional"/>
   </xs:complexType>
 
-  <!-- AddressType 정의 -->
   <xs:complexType name="AddressType">
     <xs:sequence>
       <xs:element name="Number" type="xs:string"/>
@@ -31,8 +26,7 @@
       <xs:element name="State"  type="xs:string"/>
       <xs:element name="Zip"    type="xs:string"/>
     </xs:sequence>
-    <!-- Required attribute -->
     <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
-
 </xs:schema>
+

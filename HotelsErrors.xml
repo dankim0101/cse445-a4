@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="Hotels.xsd">
-  <!-- (1) 잘못된 루트 요소: <Hotels> 여야 하지만 <Hotel> 로 지정됨 -->
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
   <Hotel>
-    <!-- (5) Name 요소 중복 -->
+    <!-- Name이 중복되는 오류 등 의도적 실습 오류는 여기에 -->
     <Name>Westin</Name>
     <Name>Westin Duplicate</Name>
-
-    <!-- (2) Address에 NearestAirport 속성 누락 -->
+    <!-- Address에 NearestAirport 속성 누락 등 -->
     <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-    <!-- (4) Address 닫는 태그(</Address>) 누락 -->
-
-    <!-- (3) Phone 요소 하나가 빠짐 -->
-    <!-- <Phone>480-968-8885</Phone> -->
-
+    </Address>
+    <!-- Phone 누락 등 -->
     <Rating>4.2</Rating>
   </Hotel>
-
-  <!-- 추가 Hotel 요소에도 동일한 유형의 오류를 삽입 가능 -->
-</Hotel>
+</Hotels>

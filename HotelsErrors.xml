@@ -1,4 +1,3 @@
-<!-- HotelsErrors.xml (위 세 파일 중 오류 테스트용) -->
 <?xml version="1.0" encoding="utf-8"?>
 <!-- (1) 잘못된 루트 이름: Hotel 대신 Hotels -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

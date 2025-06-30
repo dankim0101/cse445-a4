@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="Hotels.xsd">
-  <Hotel>
-    <!-- Name이 중복되는 오류 등 의도적 실습 오류는 여기에 -->
-    <Name>Westin</Name>
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+  <Hotel chain="WestinChain">
     <Name>Westin Duplicate</Name>
-    <!-- Address에 NearestAirport 속성 누락 등 -->
+    <!-- 오류: Address의 속성 누락 -->
     <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -13,7 +10,7 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <!-- Phone 누락 등 -->
+    <!-- 오류: Phone 태그 누락 -->
     <Rating>4.2</Rating>
   </Hotel>
 </Hotels>

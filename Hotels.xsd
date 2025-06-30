@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
@@ -12,8 +10,8 @@
   <xs:complexType name="HotelType">
     <xs:sequence>
       <xs:element name="Name" type="xs:string"/>
-      <xs:element name="Address" type="AddressType"/>
       <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+      <xs:element name="Address" type="AddressType"/>
       <xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute name="chain" type="xs:string" use="optional"/>
@@ -29,5 +27,4 @@
     </xs:sequence>
     <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
   </xs:complexType>
-
 </xs:schema>
